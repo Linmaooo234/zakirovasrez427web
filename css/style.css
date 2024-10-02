@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    background-color: #FAFDF2;
+}
+
+P{
+    background-color: transparent;
+}
+
+h2{
+    background-color: transparent;
+}
+
+/* шапка начало */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #1A3129;
+    margin-top: 20px;
+}
+
+.logo{
+    color: white;
+    font-size: 30px;
+}
+
+.menu{
+    display: flex;
+    gap: 3px;
+    background-color: transparent;
+}
+
+.menuelement{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: transparent;
+}
+
+.menubutton{
+   margin-left: 30px;
+   color: white;
+   font-size: 18px;
+   background-color: transparent;
+}
+
+.menubutton.active{
+    color:#CBEA7B ;
+    background-color: transparent;
+}
+.submenu{
+    margin-left: 30px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 10px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s ease-in;
+    background-color: transparent;
+}
+.submenu.active{
+    opacity: 1;
+    visibility: visible;
+    background-color: transparent;
+}
+
+.submenuwrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: 1px solid #CBEA7B;
+    background-color: #CBEA7B;
+    height: 100px;
+    width: 64px;
+}
+
+.submenuelement{
+    padding-top: 40px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+}
+/* шапка конец */
+
+/* слайдер начало */
+.slider {
+    position: relative;
+    max-width: 1596px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides img {
+    width:1596px;
+    height: 227px;
+}
+
+button {
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.btttn{
+   margin-left: 740px;
+   margin-top: 20px;
+}
+
+.zagolovv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.zagolovok{
+    font-size: 48px;
+    color: #262626;
+    margin-bottom: 20px;
+}
+
+.pozdzag{
+    font-size: 18px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 900px;
+}
+
+.prev{
+    font-family: Arial, Helvetica, sans-serif;
+    border:1px solid #EEF8D3 ;
+    background-color: #EEF8D3;
+    width: 58px;
+    height: 58px;
+}
+
+.next{
+    font-family: Arial, Helvetica, sans-serif;
+    border:1px solid #EEF8D3 ;
+    background-color: #EEF8D3;
+    width: 58px;
+    height: 58px;
+}
+/* слайдер конец */
+
+/* блок our pricing начало */
+    .bttns{
+        margin: 0 auto;
+        margin-left: 700px;
+    }
+
+    .Monthly{
+        background-color: #234338;
+        border: 1px #234338 solid;
+        color: white;
+        width: 114px;
+        height: 47px;
+        border-radius: 5px;
+    }
+
+    .saveyear{
+        margin-top: 20px;
+        margin-left: 730px;
+    }
+
+    .plan{
+        display: flex;
+        margin-top: 50px;
+    }
+
+    .pln{
+        background-color:#F6FBE9 ;
+        border: 1px solid #F6FBE9;
+        width: 512px;
+        height: 497px;
+        margin-left: 40px;
+        padding: 40px;
+    }
+
+    .zagolovpln{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .opisaniepln{
+        margin-top: 40px;
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .pricedollar{
+        color: #2C5446;
+        font-size: 50px;
+        margin-top: 50px;
+    }
+
+    .mnth{
+        font-size: 18px;
+    }
+    
+    .Choosepln{
+      background-color:#CBEA7B ;
+      width: 412px;
+      height: 58px;
+      border-radius: 5px;  
+      margin-top: 40px;
+    }
+/* блок our pricing конец */
+
+
+/* вопрос ответ начало */
+.faq{
+    gap: 10px;
+    width: 1400px;
+    margin: 100px;
+}
+
+.faq__item h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    transition: .2s ease-in;
+    margin-top: 20px;
+}
+.faq__item p{
+    height: 0;
+    overflow: hidden;
+    color: black;
+    margin-top: 20px;
+    transition: .2s ease-in;
+}
+
+.arrowdow{
+    width: 50px;
+    margin-top: 10px;
+}
+
+.faq__item{
+    display: flex;
+    margin-top: 30px;
+}
+/* вопрос ответ конец */
+
+/* модалка начало */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #1A3129;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    color: white;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* модалка конец */
